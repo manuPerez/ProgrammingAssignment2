@@ -1,3 +1,5 @@
+## Write a short comment describing this function
+## Function for storing matrix and its inverse
 makeCacheMatrix <- function(x = matrix()) {
 	m <- NULL	
 	set <- function(y){
@@ -10,6 +12,9 @@ makeCacheMatrix <- function(x = matrix()) {
 	list(set = set, get = get, setsolve = setsolve, getsolve = getsolve)	
 }
 
+## Write a short comment describing this function
+## Function for access makeCacheMatrix function and
+## solving or getting inverse
 cacheSolve <- function(x, ...) {
 	m <- x$getsolve()
 	if(!is.null(m)){
